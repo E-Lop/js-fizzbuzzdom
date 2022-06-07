@@ -1,0 +1,32 @@
+/*** RESET ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*** BODY ***/
+body {
+  background-color: #083b4c;
+}
+h1 {
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 30px;
+}
+.square_container {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+
+  /* todo test */
+  background-color: azure;
+}
+.box {
+  width: 50px;
+  height: 50px;
+
+  /* todo test */
+  background-color: white;
+}
