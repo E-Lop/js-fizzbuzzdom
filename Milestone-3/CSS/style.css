@@ -5,6 +5,28 @@
   box-sizing: border-box;
 }
 
+/*** COMMON ***/
+:root {
+  --primary-bgcolor: #1389b2;
+  --fizz-bgcolor: #0bd6a1;
+  --buzz-bgcolor: #ffd166;
+  --fizzbuzz-bgcolor: #f0466f;
+}
+
+/* colori di sfondo tramite classe */
+.blue_bg {
+  background-color: var(--primary-bgcolor);
+}
+.green_bg {
+  background-color: var(--fizz-bgcolor);
+}
+.yellow_bg {
+  background-color: var(--buzz-bgcolor);
+}
+.salmon_bg {
+  background-color: var(--fizzbuzz-bgcolor);
+}
+
 /*** BODY ***/
 body {
   background-color: #083b4c;
@@ -14,19 +36,20 @@ h1 {
   font-size: 5rem;
   text-align: center;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .square_container {
   width: 80%;
-  display: flex;
   margin: 0 auto;
-
-  /* todo test */
-  background-color: azure;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .box {
-  width: 50px;
-  height: 50px;
-
-  /* todo test */
-  background-color: white;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 10px;
+  font-size: 1.2rem;
 }
