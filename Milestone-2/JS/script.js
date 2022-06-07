@@ -6,15 +6,28 @@ o la stringa corretta (seguendo le regole della Milestone 1). */
 const Fizz = 'Fizz';
 const Buzz = 'Buzz';
 const FizzBuzz = 'FizzBuzz';
+const mainList = document.querySelector('.unordered_numbers');
 
 for (let i = 1; i <= 100; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
-    console.log(FizzBuzz);
+    const newLi = `
+  <li>${FizzBuzz}</li>
+  `;
+    mainList.innerHTML += newLi;
   } else if (i % 3 === 0) {
-    console.log(Fizz);
+    const newLi = `
+  <li>${Fizz}</li>
+  `;
+    mainList.innerHTML += newLi;
   } else if (i % 5 === 0) {
-    console.log(Buzz);
+    const newLi = `
+  <li>${Buzz}</li>
+  `;
+    mainList.innerHTML += newLi;
   } else {
-    console.log(i);
+    const newLi = `
+  <li>${i}</li>
+  `;
+    mainList.innerHTML += newLi;
   }
 }
